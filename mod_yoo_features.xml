@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3" method="install">
+	<name>MOD_YOO_FEATURES_XML_NAME</name>
+	<author>YooYoo.labs</author>
+    <creationDate>29.09.2016</creationDate>
+    <copyright>YooYoo.labs 2016</copyright>
+    <license>GNU General Public License</license>
+    <authorEmail>info@yooyoo.ru</authorEmail>
+    <authorUrl>www.yooyoo.ru</authorUrl>
+    <version>1.0.0</version>
+    <description>MOD_YOO_FEATURES_XML_DESCRIPTION</description>
+
+	<files>
+		<filename module="mod_yoo_features">mod_yoo_features.php</filename>
+        <filename>helper.php</filename>
+        <folder>language</folder>
+        <folder>tmpl</folder>    
+        <folder>sql</folder>
+        <folder>media</folder>
+	</files>
+
+	<media destination="mod_yoo_features" folder="media">
+		<folder>css</folder>
+		<folder>js</folder>
+		<folder>images</folder>
+	</media>
+
+	<config>
+		<fields name="params">
+			
+			<fieldset name="basic">
+				<!--Card1-->
+				<field name="note1" type="note" label="Card1"/>
+				<field name="IntroText1" type="text" default="" label="MOD_YOO_FEATURES_INTROTEXT_LABEL" description="MOD_YOO_FEATURES_INTROTEXT_DESC" />
+				<field  name="IntroPic1" type="media" directory="yoo_feature/intro/" preview="true" label="MOD_YOO_FEATURES_INTROPIC_LABEL" description="MOD_YOO_FEATURES_INTROPIC_DESC" />
+				<field  name="DescText1" type="textarea" default="" rows="7" cols="15" label="MOD_YOO_FEATURES_DESCTEXT_LABEL" description="MOD_YOO_FEATURES_DESCTEXT_DESC" />
+				<field  name="DescPic1" type="media" directory="yoo_feature/Desc/" preview="true" label="MOD_YOO_FEATURES_DESCPIC_LABEL" description="MOD_YOO_FEATURES_DESCPIC_DESC" />
+				<field name="class1" type="text" label="Custom Class" description="Custom Class" />
+				<field name="feature1_hr" type="spacer" hr="true" />
+				<!--Card2-->
+				<field name="note2" type="note" label="Card2"/>
+				<field name="IntroText2" type="text" default="" label="MOD_YOO_FEATURES_INTROTEXT_LABEL" description="MOD_YOO_FEATURES_INTROTEXT_DESC" />
+				<field  name="IntroPic2" type="media" directory="yoo_feature/intro/" preview="true" label="MOD_YOO_FEATURES_INTROPIC_LABEL" description="MOD_YOO_FEATURES_INTROPIC_DESC" />
+				<field  name="DescText2" type="textarea" default="" rows="7" cols="15" label="MOD_YOO_FEATURES_DESCTEXT_LABEL" description="MOD_YOO_FEATURES_DESCTEXT_DESC" />
+				<field  name="DescPic2" type="media" directory="yoo_feature/Desc/" preview="true" label="MOD_YOO_FEATURES_DESCPIC_LABEL" description="MOD_YOO_FEATURES_DESCPIC_DESC" />
+				<field name="class2" type="text" label="Custom Class" description="Custom Class" />
+				<field name="feature2_hr" type="spacer" hr="true" />
+				<!--Card3-->
+				<field name="note3" type="note" label="Card3"/>
+				<field name="IntroText3" type="text" default="" label="MOD_YOO_FEATURES_INTROTEXT_LABEL" description="MOD_YOO_FEATURES_INTROTEXT_DESC" />
+				<field  name="IntroPic3" type="media" directory="yoo_feature/intro/" preview="true" label="MOD_YOO_FEATURES_INTROPIC_LABEL" description="MOD_YOO_FEATURES_INTROPIC_DESC" />
+				<field  name="DescText3" type="textarea" default="" rows="7" cols="15" label="MOD_YOO_FEATURES_DESCTEXT_LABEL" description="MOD_YOO_FEATURES_DESCTEXT_DESC" />
+				<field  name="DescPic3" type="media" directory="yoo_feature/Desc/" preview="true" label="MOD_YOO_FEATURES_DESCPIC_LABEL" description="MOD_YOO_FEATURES_DESCPIC_DESC" />
+				<field name="class3" type="text" label="Custom Class" description="Custom Class" />
+				<field name="feature3_hr" type="spacer" hr="true" />
+				<!--Card4-->
+				<field name="note4" type="note" label="Card4"/>
+				<field name="IntroText4" type="text" default="" label="MOD_YOO_FEATURES_INTROTEXT_LABEL" description="MOD_YOO_FEATURES_INTROTEXT_DESC" />
+				<field  name="IntroPic4" type="media" directory="yoo_feature/intro/" preview="true" label="MOD_YOO_FEATURES_INTROPIC_LABEL" description="MOD_YOO_FEATURES_INTROPIC_DESC" />
+				<field  name="DescText4" type="textarea" default="" rows="7" cols="15" label="MOD_YOO_FEATURES_DESCTEXT_LABEL" description="MOD_YOO_FEATURES_DESCTEXT_DESC" />
+				<field  name="DescPic4" type="media" directory="yoo_feature/Desc/" preview="true" label="MOD_YOO_FEATURES_DESCPIC_LABEL" description="MOD_YOO_FEATURES_DESCPIC_DESC" />
+				<field name="class4" type="text" label="Custom Class" description="Custom Class" />
+				<field name="feature4_hr" type="spacer" hr="true" />
+			</fieldset>
+
+			<fieldset name="style" label="MOD_YOO_FEATURES_CARDS_DESC">
+				<field name="cards" type="list" default="4" label="MMOD_YOO_FEATURES_CARDS_LABEL" description="MOD_YOO_FEATURES_CARDS_DESC">
+					<option value="2">2</option>  
+					<option value="3">3</option>  
+					<option value="4">4</option>
+				</field>
+			</fieldset>
+
+			<fieldset name="advanced">
+				<field name="moduleclass_sfx" type="text" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				<field name="include_css" type="radio" class="btn-group btn-group-yesno" default="1" label="MOD_YOO_FEATURES_INCLUDE_CSS_LABEL" description="MOD_YOO_FEATURES_INCLUDE_CSS_DESC">
+			        <option value="1">JYES</option>
+			        <option value="0">JNO</option>
+				</field>
+				<field name="include_js" type="radio" class="btn-group btn-group-yesno" default="1" label="MOD_YOO_FEATURES_INCLUDE_JS_LABEL" description="MOD_YOO_FEATURES_INCLUDE_JS_DESC">
+			        <option value="1">JYES</option>
+			        <option value="0">JNO</option>
+				</field>
+				<field name="include_jquery" type="radio" class="btn-group btn-group-yesno" default="1" label="MOD_YOO_FEATURES_INCLUDE_JQ_LABEL" description="MOD_YOO_FEATURES_INCLUDE_JQ_DESC">
+			        <option value="1">JYES</option>
+			        <option value="0">JNO</option>
+				</field>				
+				<field name="include_jquery_easing" type="radio" class="btn-group btn-group-yesno" default="1" label="MOD_YOO_FEATURES_INCLUDE_JQE_LABEL" description="MOD_YOO_FEATURES_INCLUDE_JQE_DESC">
+			        <option value="1">JYES</option>
+			        <option value="0">JNO</option>
+				</field>
+				<field
+					name="Desc_backgroundcolor"
+					type="color"
+					default="#eee"
+					label="MOD_YOO_FEATURES_BACKGROUND_COLOR_DESC"
+					description="MOD_YOO_FEATURES_BACKGROUND_COLOR_LABEL"
+					/>
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC"
+					/>
+
+			</fieldset>
+
+		</fields>
+	</config>
+
+</extension>
