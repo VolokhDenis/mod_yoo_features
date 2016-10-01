@@ -22,18 +22,18 @@ if ($params->get('include_css', 1))
 }
 //Подключаем скрипты
 
-if ($params->get('include_jquery', 1))
-{
-    $document->addScript('modules/mod_yoo_features/media/js/jquery-1.11.3.min.js','text/javascript', true);
-}
-if ($params->get('include_jquery_easing', 1))
-{
-    $document->addScript('modules/mod_yoo_features/media/js/jquery.easing.1.3.min.js', 'text/javascript', true);
-}
-if ($params->get('include_js', 1))
-{
-    $document->addScript('modules/mod_yoo_features/media/js/yoo-features.js', 'text/javascript', true);
-}
+//if ($params->get('include_jquery', 1))
+//{
+//    $document->addScript('modules/mod_yoo_features/media/js/jquery-1.11.3.min.js','text/javascript', true);
+//}
+//if ($params->get('include_jquery_easing', 1))
+//{
+//    $document->addScript('modules/mod_yoo_features/media/js/jquery.easing.1.3.min.js', 'text/javascript', true);
+//}
+//if ($params->get('include_js', 1))
+//{
+//    $document->addScript('modules/mod_yoo_features/media/js/yoo-features.js', 'text/javascript', true);
+//}
 
 
 
