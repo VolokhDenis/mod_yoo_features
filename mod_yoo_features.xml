@@ -77,7 +77,7 @@
 			        <option value="1">JYES</option>
 			        <option value="0">JNO</option>
 				</field>
-				<field name="include_js" type="radio" class="btn-group btn-group-yesno" default="1" label="MOD_YOO_FEATURES_INCLUDE_JS_LABEL" description="MOD_YOO_FEATURES_INCLUDE_JS_DESC">
+			<!--<field name="include_js" type="radio" class="btn-group btn-group-yesno" default="1" label="MOD_YOO_FEATURES_INCLUDE_JS_LABEL" description="MOD_YOO_FEATURES_INCLUDE_JS_DESC">
 			        <option value="1">JYES</option>
 			        <option value="0">JNO</option>
 				</field>
@@ -96,6 +96,7 @@
 					label="MOD_YOO_FEATURES_BACKGROUND_COLOR_DESC"
 					description="MOD_YOO_FEATURES_BACKGROUND_COLOR_LABEL"
 					/>
+				-->
 				<field
 					name="layout"
 					type="modulelayout"
