@@ -11,7 +11,7 @@ defined('_JEXEC') or die;
 
 $displayMode = $params->get('display_mode', 0);
 ?>
-
+<div>
 <div class="yoo-features <?php echo $moduleclass_sfx;?>">
 	
 
@@ -47,3 +47,4 @@ $displayMode = $params->get('display_mode', 0);
 
 </div><!--/.yoo-features-->
 
+</div>
