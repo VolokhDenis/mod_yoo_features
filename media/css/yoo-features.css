@@ -1,89 +1,92 @@
 
 .yoo-features {
+display: table;
 padding: 40px 0;
-position: relative;
-height:auto;
+height: 400px;
 margin: 0 auto;
-height: 800px;
-overflow:hidden;
 }
 
-.serv_board{
-position: absolute;
-width: 100%;
-height: 370px;
-background-color: #fff;
-z-index: 3;
-}
-
-.yoo-feature{perspective: 1000px;}
-.yoo-feature:hover .flipper, .yoo-feature.hover .flipper {
-	transform: rotateY(180deg);
-}
-
-.flipper {
-	transition: 0.6s;
-	transform-style: preserve-3d;
+.serv_board{margin: 10px auto; display: table-cell; vertical-align: middle;}
+.yoo-feature{display: flex;}
+.flipcard{
+	-webkit-perspective: 500px;
+	-moz-perspective:500px;
+	-o-perspective:500px;
+	perspective: 500px;
 	position: relative;
-}
-.serv_card_front, .serv_card_back {
-	backface-visibility: hidden;
-	width: 100%;
-	height: 370px;
-	position: absolute;
-	top: 0;
-	left: 0;
+	width: 220px;
+	height: 160px;
+	margin:10px auto;
 }
 
-/* front pane, placed above back */
-.serv_card_front {
-	z-index: 2;
-	/* for firefox 31 */
-	transform: rotateY(0deg);
+.flipcard.v:hover .serv_card_front, .flipcard.v.flip .serv_card_front{
+  transform: rotateX(180deg);
+  -webkit-transform:rotateX(180deg);
+  -moz-transform: rotateX(180deg);
+  -o-transform: rotateX(180deg);
 }
-
-/* back, initially hidden pane */
-.serv_card_back {transform: rotateY(180deg); text-align: center; border-style: inset;}
-.serv_card_back .info_table{background-color: #eee; height: 100%;position: relative;padding: 10px;}
-
-.serv_card{
-position:relative;
-height:370px;
-display: inline-block;
-overflow: hidden;
-padding: 0 1%;
+.flipcard.v:hover .serv_card_back, .flipcard.v.flip .serv_card_back{
+  transform: rotateX(0deg);
+  -webkit-transform:rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  -o-transform: rotateX(0deg);
 }
-
-.serv_card a img{
-width:100%;
-text-align: center;
+.flipcard.v .serv_card_back{
+  transform: rotateX(-180deg);
+  -webkit-transform:rotateX(-180deg);
+  -o-transform: rotateX(-180deg);
+  -moz-transform: rotateX(-180deg);
 }
-
-
-
-.serv_close{
-position: absolute;
-float: right;
-right: 10px;
-top:10px;
-background-image: url('../images/close.png') ;
-background-size: cover;
-width: 50px;
-height: 50px;
-opacity:1;
-cursor: pointer;
+.flipcard.h:hover .serv_card_front, .flipcard.h.flip .serv_card_front{
+  transform: rotateY(180deg);
+  -webkit-transform:rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
 }
+.flipcard.h:hover .serv_card_back, .flipcard.h.flip .serv_card_back{
+  transform: rotateY(0deg);
+  -webkit-transform:rotateY(0deg);
+  -moz-transform: rotateY(0deg);
+  -o-transform: rotateY(0deg);
+}
+.flipcard.h .serv_card_back{
+  transform: rotateY(-180deg);
+ -webkit-transform:rotateY(-180deg);
+ -moz-transform: rotateY(-180deg);
+ -o-transform: rotateY(-180deg);
+
+}
+.flipcard .serv_card_front, .flipcard .serv_card_back
+{
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  transition: all 0.5s ease-in;
+  color: white;
+  background-color: #000;
+  padding: 10px;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+}
+.serv_card_front{text-align: center;}
+.front_image {height: 100%; display: inline;}
+
+
 
 /*==========  Mobile First Method  ==========*/
 
     /* Custom, iPhone Retina */ 
     @media only screen and (max-width : 320px) {
-    .serv_card{width: 100%;}
+    /*.serv_card{width: 100%;}*/
 }
 
     /* Extra Small Devices, Phones */ 
     @media only screen and (max-width  : 480px) {
-    .serv_card{width: 100%;}
+    /*.serv_card{width: 100%;}*/
         }
 
     /* Small Devices, Tablets */
