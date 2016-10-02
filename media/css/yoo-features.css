@@ -1,8 +1,11 @@
 
+
+.yoo-title{text-align: center;padding: 80px 0 0 0;}
+
 .yoo-features {
 display: table;
-padding: 40px 0;
-height: 400px;
+padding: 20px 0 100px 0;
+height: 600px;
 margin: 0 auto;
 }
 
@@ -14,8 +17,8 @@ margin: 0 auto;
 	-o-perspective:500px;
 	perspective: 500px;
 	position: relative;
-	width: 220px;
-	height: 160px;
+	width: 250px;
+	height: 420px;
 	margin:10px auto;
 }
 
@@ -74,6 +77,7 @@ margin: 0 auto;
 }
 .serv_card_front{text-align: center;}
 .front_image {height: 100%; display: inline;}
+/*=========== Shadow effect ==============*/
 
 
 
