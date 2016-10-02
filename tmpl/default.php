@@ -10,9 +10,17 @@
 defined('_JEXEC') or die;
 
 $displayMode = $params->get('display_mode', 0);
+$title = $params->get('title');
 ?>
 
+		<?php if( isset($title)){?>
+			<div class="yoo-title"><h3><?php echo $title;  ?></h3></div>
+		<?php }?>
+
 <div class="yoo-features <?php echo $moduleclass_sfx;?>">
+
+
+
 	<div class="serv_board"> <!--possible to improve as chooseble row type fluid/non fluid-->
 	    <?php for ($i = 0; $i <= $cards-1; $i++){
 					$num=$i+1;

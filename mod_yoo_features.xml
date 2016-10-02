@@ -29,8 +29,10 @@
 		<fields name="params">
 			
 			<fieldset name="basic">
+				<!--Title text-->
+				<field name="title" type="text" default="" label="MOD_YOO_FEATURES_TITLE_LABEL" description="MOD_YOO_FEATURES_TITLE_DESC" />
 				<!--Card1-->
-				<field name="note1" type="note" label="Card1"/>
+				<field name="note1" type="note" label="____________________CARD_1____________________"/>
 				<field name="IntroText1" type="text" default="" label="MOD_YOO_FEATURES_INTROTEXT_LABEL" description="MOD_YOO_FEATURES_INTROTEXT_DESC" />
 				<field  name="IntroPic1" type="media" directory="yoo_feature/intro/" preview="true" label="MOD_YOO_FEATURES_INTROPIC_LABEL" description="MOD_YOO_FEATURES_INTROPIC_DESC" />
 				<field  name="DescText1" type="textarea" default="" rows="7" cols="15" label="MOD_YOO_FEATURES_DESCTEXT_LABEL" description="MOD_YOO_FEATURES_DESCTEXT_DESC" />
@@ -38,7 +40,7 @@
 				<field name="class1" type="text" label="Custom Class" description="Custom Class" />
 				<field name="feature1_hr" type="spacer" hr="true" />
 				<!--Card2-->
-				<field name="note2" type="note" label="Card2"/>
+				<field name="note2" type="note" label="____________________CARD_2____________________"/>
 				<field name="IntroText2" type="text" default="" label="MOD_YOO_FEATURES_INTROTEXT_LABEL" description="MOD_YOO_FEATURES_INTROTEXT_DESC" />
 				<field  name="IntroPic2" type="media" directory="yoo_feature/intro/" preview="true" label="MOD_YOO_FEATURES_INTROPIC_LABEL" description="MOD_YOO_FEATURES_INTROPIC_DESC" />
 				<field  name="DescText2" type="textarea" default="" rows="7" cols="15" label="MOD_YOO_FEATURES_DESCTEXT_LABEL" description="MOD_YOO_FEATURES_DESCTEXT_DESC" />
@@ -46,7 +48,7 @@
 				<field name="class2" type="text" label="Custom Class" description="Custom Class" />
 				<field name="feature2_hr" type="spacer" hr="true" />
 				<!--Card3-->
-				<field name="note3" type="note" label="Card3"/>
+				<field name="note3" type="note" label="____________________CARD_3____________________"/>
 				<field name="IntroText3" type="text" default="" label="MOD_YOO_FEATURES_INTROTEXT_LABEL" description="MOD_YOO_FEATURES_INTROTEXT_DESC" />
 				<field  name="IntroPic3" type="media" directory="yoo_feature/intro/" preview="true" label="MOD_YOO_FEATURES_INTROPIC_LABEL" description="MOD_YOO_FEATURES_INTROPIC_DESC" />
 				<field  name="DescText3" type="textarea" default="" rows="7" cols="15" label="MOD_YOO_FEATURES_DESCTEXT_LABEL" description="MOD_YOO_FEATURES_DESCTEXT_DESC" />
@@ -54,7 +56,7 @@
 				<field name="class3" type="text" label="Custom Class" description="Custom Class" />
 				<field name="feature3_hr" type="spacer" hr="true" />
 				<!--Card4-->
-				<field name="note4" type="note" label="Card4"/>
+				<field name="note4" type="note" label="____________________CARD_4___________________"/>
 				<field name="IntroText4" type="text" default="" label="MOD_YOO_FEATURES_INTROTEXT_LABEL" description="MOD_YOO_FEATURES_INTROTEXT_DESC" />
 				<field  name="IntroPic4" type="media" directory="yoo_feature/intro/" preview="true" label="MOD_YOO_FEATURES_INTROPIC_LABEL" description="MOD_YOO_FEATURES_INTROPIC_DESC" />
 				<field  name="DescText4" type="textarea" default="" rows="7" cols="15" label="MOD_YOO_FEATURES_DESCTEXT_LABEL" description="MOD_YOO_FEATURES_DESCTEXT_DESC" />
@@ -64,7 +66,7 @@
 			</fieldset>
 
 			<fieldset name="style" label="MOD_YOO_FEATURES_CARDS_DESC">
-				<field name="cards" type="list" default="4" label="MMOD_YOO_FEATURES_CARDS_LABEL" description="MOD_YOO_FEATURES_CARDS_DESC">
+				<field name="cards" type="list" default="4" label="MOD_YOO_FEATURES_CARDS_LABEL" description="MOD_YOO_FEATURES_CARDS_DESC">
 					<option value="2">2</option>  
 					<option value="3">3</option>  
 					<option value="4">4</option>
@@ -103,7 +105,6 @@
 					label="JFIELD_ALT_LAYOUT_LABEL"
 					description="JFIELD_ALT_MODULE_LAYOUT_DESC"
 					/>
-
 			</fieldset>
 
 		</fields>
