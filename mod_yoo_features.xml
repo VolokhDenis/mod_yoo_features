@@ -71,6 +71,10 @@
 					<option value="3">3</option>  
 					<option value="4">4</option>
 				</field>
+				<field name="flip_type" type="radio" class="btn-group btn-group-yesno" default="h" label="MOD_YOO_FEATURES_FLIPTYPE_LABEL" description="MOD_YOO_FEATURES_FLIPTYPE_DESC">
+			        <option value="h">MOD_YOO_FEATURES_HORIZINTAL_FLIP</option>
+			        <option value="v">MOD_YOO_FEATURES_VERTICAL_FLIP</option>
+				</field>				
 			</fieldset>
 
 			<fieldset name="advanced">
