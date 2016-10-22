@@ -75,6 +75,12 @@
 			        <option value="h">MOD_YOO_FEATURES_HORIZINTAL_FLIP</option>
 			        <option value="v">MOD_YOO_FEATURES_VERTICAL_FLIP</option>
 				</field>				
+				<field name="card_size_w" type="text" default="250" label="
+					MOD_YOO_FEATURES_CARD_SIZE_W_LABEL" description="MOD_YOO_FEATURES_CARD_SIZE_W_DESC">
+				</field>
+				<field name="card_size_h" type="text" default="420" label="
+					MOD_YOO_FEATURES_CARD_SIZE_H_LABEL" description="MOD_YOO_FEATURES_CARD_SIZE_H_DESC"> 
+				</field>				
 			</fieldset>
 
 			<fieldset name="advanced">

@@ -23,7 +23,7 @@
 	height: 420px;
 	margin:10px auto;
 }
-.IntroText{position: absolute;text-align: center;width: 230px; height: 400px; background-color: rgba(0, 0, 0, 0.4);
+.IntroText{position: absolute;text-align: center;width: 100%; left: 0; background-color: rgba(0, 0, 0, 0.4);
  } /* Ширина дива интро текст должна быть равна ширине флипкард минус паддинг и высота*/
 
 .flipcard.v:hover .serv_card_front, .flipcard.v.flip .serv_card_front{
