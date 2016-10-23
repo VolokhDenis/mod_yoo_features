@@ -14,6 +14,7 @@ $title = $params->get('title');
 $flip_type = $params->get('flip_type');
 $card_size_w = $params->get('card_size_w');
 $card_size_h = $params->get('card_size_h');
+$card_blockquote = $params->get('card_blockquote');
 ?>
 
 		<?php if( isset($title)){?>
@@ -51,3 +52,4 @@ $card_size_h = $params->get('card_size_h');
      </div> <!-- serv_board close-->
 </div><!--/.yoo-features-->
 
+<blockquote><p><?php echo $card_blockquote;  ?></p></blockquote>

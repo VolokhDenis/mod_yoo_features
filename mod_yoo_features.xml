@@ -81,6 +81,9 @@
 				<field name="card_size_h" type="text" default="420" label="
 					MOD_YOO_FEATURES_CARD_SIZE_H_LABEL" description="MOD_YOO_FEATURES_CARD_SIZE_H_DESC"> 
 				</field>				
+				<field name="card_blockquote" type="text" label="
+					MOD_YOO_FEATURES_CARD_BLOCKQUOTE" description="MOD_YOO_FEATURES_CARD_BLOCKQUOTE"> 
+				</field>
 			</fieldset>
 
 			<fieldset name="advanced">
